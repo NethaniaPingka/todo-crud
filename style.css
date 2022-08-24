@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #e2c35d, #d88771);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 200vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #d88771;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.todo-item {
+    flex: 1;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.edit-btn {
+    background-color: rgb(87, 162, 248);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: white;
+    color: rgb(87, 162, 248);
+}
+
+.complete-btn {
+    background-color: rgb(61, 207, 61);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background-color: white;
+    color: rgb(61, 207, 61);
+}
+
+.trash-btn {
+    background: #d88771;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.trash-btn:hover {
+    background-color: white;
+    color: #d88771;
+    transition: 0.3s ease all;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none; /*can't click on icon*/
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem), rotate(20deg);
+    opacity: 0;
+}
